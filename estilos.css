@@ -48,7 +48,7 @@ header nav {
  
  
 .menu li a:hover {
-	background:rgba(14, 63, 155, 0.5);
+	background:rgba(78, 134, 238, 0.3);
 }
 
 .menu i {
@@ -81,8 +81,7 @@ header nav {
 		display:block;
         padding:26px;
         background-image: url(https://image.freepik.com/foto-gratis/papel-pintado-pared-hormigon-pintado-textura-concepto-coloreado_53876-31799.jpg);
-		/* background:rgb(14, 22, 97); */
-		color:#fff;
+        color:#fff;
 		text-decoration:none;
 		font-weight: bold;
 		font-size:25px;
@@ -121,12 +120,13 @@ main .arts article {
 }
 
 aside {
-    background: rgba(5, 82, 199, 0.5); 
+    background: rgba(22, 156, 218, 0.5); 
     float: left; 
     padding: 20px; 
     box-sizing: border-box;
     width: 30%;
     border-radius: 20px;
+    color: aliceblue;
 }
 
 aside h3 {
@@ -141,6 +141,11 @@ footer {
     text-align: center;
     border-radius: 20px;
 }
+
+.fisic {
+    padding: 2%;
+    border-radius: 20px;
+}  
 
 .k2 {
     text-align: center;
@@ -160,26 +165,28 @@ footer {
         width: 100%;
     }
 
+
     main .arts article {
         margin-left: 10%; 
         margin-right: 10%
     }
 
     aside {
-        width: 68%; 
-        margin-bottom: 0px; 
-        margin-left: 15%; 
-        margin-right: 15%
+        width: 80%; 
+        margin-left: 10%; 
+        margin-right: 10%;
     }
 
     .fisic {  
         min-width: 200px;
-        margin-left: 20%; 
-        margin-right: 15%;
         margin-top: 20px;
+        width: 100%;
     }    
+
+    .img {
+        margin: auto 15%;
+        float: none;
+    }
+
 }
 
-    .fisic {
-        padding: 2%;
-    }  
