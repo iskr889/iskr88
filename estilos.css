@@ -63,7 +63,7 @@ header nav {
 		margin:0;
 		position: fixed;
 		transition: .5s;
-		display: block;
+        display: block;
 	}
  
 	.menu li {
@@ -100,7 +100,31 @@ header nav {
 	#box:checked~.menu {left: 0%}
 }	
 
-main, footer {
+header .fondo {
+    background-image: url(https://i.pinimg.com/originals/b8/8c/d6/b88cd67fef9b2f690667dcb86df35f5b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+}
+
+header .fondo h1 {
+    text-align: center;
+    background: rgba(0,0,0,0.4); 
+    height: auto; 
+    width: 550px; 
+    margin: auto; 
+    padding: 10px; 
+    border: 5px solid; 
+    color: aliceblue;
+    border-radius: 20px; 
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+}
+
+/* ESTO ES TODO EL HEADER */
+
+main, .main2, footer {
     width: 90%; 
     max-width: 1050px; 
     margin: 20px auto
@@ -119,6 +143,33 @@ main .arts article {
     border-radius: 20px; 
 }
 
+main .arts article h3, .main2 article h3 {
+    font-size: 18px;
+}
+
+.main2 {
+    width: 90%;
+    float: left;
+    margin-left: 10%;
+}
+
+.main2 article { 
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px; 
+    margin-bottom: 30px; 
+    border-radius: 20px; 
+}
+
+.main2 article h3 {
+    font-size: 18px;
+}
+
+.main2 img {
+    display:block;
+    margin:auto;
+    padding-bottom: 30px;
+}
+
 aside {
     background: rgba(22, 156, 218, 0.5); 
     float: left; 
@@ -133,8 +184,32 @@ aside h3 {
     text-align: center;
 }
 
+aside input {
+    padding: 8px 20px 8px 20px;
+    border-bottom: 2px solid white;
+    background: rgb(3, 77, 114); 
+    outline: none;
+    border: rgb(22, 156, 218,0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+aside input::placeholder {
+    color: whitesmoke;
+  }
+
+aside .enviar {
+    width: 100%;
+}
+
+aside .enviar:hover{
+    background: rgb(6, 116, 172)
+}
+
 footer {
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     color: white;
     clear:both;
     padding: 15px; 
@@ -142,21 +217,8 @@ footer {
     border-radius: 20px;
 }
 
-.fisic {
-    padding: 2%;
-    border-radius: 20px;
-}  
-
-.k2 {
-    text-align: center;
-    background: rgba(0,0,0,0.4); 
-    height: auto; 
-    width: 200px; 
-    margin: auto; 
-    padding: 10px; 
-    border: 5px solid; 
-    color: aliceblue;
-    border-radius: 20px; 
+main .arts .youtube {
+    margin: 20px 80px
 }
 
 @media (max-width: 820px) {
@@ -177,16 +239,24 @@ footer {
         margin-right: 10%;
     }
 
-    .fisic {  
-        min-width: 200px;
-        margin-top: 20px;
-        width: 100%;
-    }    
+    header .fondo {
+        height: 400px;
+    }
+    
+    header .fondo h1 {
+        height: auto; 
+        width: 320px; 
+        font-size: 30px;
+    }
 
-    .img {
-        margin: auto 15%;
-        float: none;
+    
+    .main2 article {
+
+        margin-right: 10%;
+    }
+
+    .main2 img {
+        max-width: 300px;
     }
 
 }
-
